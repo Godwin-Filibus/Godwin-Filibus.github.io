@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #eee;
+  background-color: #fff;
+}
+
+nav header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav header img {
+  width: 100px;
+}
+
+nav header div {
+  text-align: center;
+  color: #444;
+  font-size: 20px;
+}
+
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 1023px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+.hero::after {
+  background-color: #111;
+  opacity: 0;
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+video {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 30vh;
+  text-align: justify-all;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .card header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-size: 3em;
+  font-weight: 900;
+  border: 3px solid #fff;
+  border-radius: 360px;
+  background-color: #80c6ff;
+  position: relative;
+  top: 30px;
+}
+
+main .card div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 20vh;
+  background-color: #444;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+main .card div p {
+  text-align: justify;
+}
+
+footer {
+  width: 100%;
+  background-color: #444;
+  margin-top: 1rem;
+  padding: 2rem 0;
+  height: 40vh;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+footer .contact .in {
+  margin-top: 2em;
+  height: 2rem;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
