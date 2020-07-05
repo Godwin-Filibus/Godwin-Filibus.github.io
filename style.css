@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #eee;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+}
+
+.header nav, .header .search {
+  display: none;
+}
+
+.header .name {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header .name p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.header .name p a {
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: 3px;
+}
+
+.header .name p a span {
+  background-color: #494141;
+  padding: .4em .4em;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
