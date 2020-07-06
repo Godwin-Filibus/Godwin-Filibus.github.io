@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div p {
+  letter-spacing: 3px;
+  display: inline-block;
+  text-align: justify-all;
+}
+
+header nav {
+  display: none;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 80vh (300px)[7];
+      grid-template-rows: 80vh repeat(7, 300px);
+  grid-gap: 0px;
+}
+
+main .hero img {
+  max-width: 100%;
+  height: 80vh;
+}
+
+main .continents .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .continents .card img {
+  width: 100%;
+  height: 300px;
+}
+
+main .continents .card p {
+  display: inline-block;
+  width: 160px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(255, 0, 0, 0.5);
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 7px;
+  text-transform: uppercase;
+}
+
+main .continents .africa p {
+  background: rgba(79, 141, 20, 0.411);
+}
+
+main .continents .antartica p {
+  background: rgba(25, 141, 145, 0.397);
+}
+
+main .continents .asia p {
+  background: rgba(38, 105, 35, 0.438);
+}
+
+main .continents .australia p {
+  background: rgba(35, 91, 105, 0.438);
+}
+
+main .continents .europe p {
+  background: rgba(15, 129, 129, 0.363);
+}
+
+main .continents .north-america p {
+  background: rgba(143, 96, 27, 0.411);
+}
+
+main .continents .south-america p {
+  background: rgba(143, 97, 27, 0.329);
+}
+/*# sourceMappingURL=style.css.map */
