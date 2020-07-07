@@ -44,33 +44,33 @@ header
     nav 
         display: none
 
-main 
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 80vh repeat(7, 300px)
-    grid-gap: 0px
-
-    .hero 
+.hero 
         img 
-            max-width: 100%
+            width: 100%
             height: 80vh
 
+
+main 
+    width: 90%
+    margin: 0 auto
+
     .continents
-        
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(7, 500px)
+        grid-gap: 3px
         .card 
             position: relative
             display: flex
-            flex-direction: row
+            flex-direction: column
             justify-content: center
             align-items: center
             img 
                 width: 100%
-                height: 300px
-            p 
+            .continent 
                 display: inline-block
                 width: 160px
                 color: #fff
-                position: absolute
                 text-align: center
                 box-sizing: border-box
                 background: rgba(255, 0, 0, 0.5)
@@ -78,25 +78,61 @@ main
                 padding: 10px
                 border-radius: 7px
                 text-transform: uppercase
+            .info 
+                height: 50%
+                box-sizing: border-box
+                padding: 15px
+                background-color: #eeeeee
+                display: flex
+                flex-direction: column
+                .text 
+                    font-size: .8rem
+                    font-weight: 200
+                    text-align: justify
+                    overflow: hidden
+                .continent
+                    margin: 0px auto 0px auto
+                // background: linear-gradient(0turn, #CCD9DF, #6D9096, #3E400F, )
         .africa 
-            p 
-                background: rgba(79, 141, 20, 0.411)
+            grid-row: 1
+            .info 
+                background-color: #CCD9DF
+            .continent 
+                background: #3F4616
         .antartica 
-            p 
-                background: rgba(25, 141, 145, 0.397)
+            grid-row: 2
+            .info 
+                background-color: #D2D5E4
+            .continent 
+                background: #434B56
         .asia 
-            p 
-                background: rgba(38, 105, 35, 0.438)
+            grid-row: 3
+            .info 
+                background-color:#FADB64
+            .continent 
+                background: #CDB8AA
         .australia 
-            p 
-                background: rgba(35, 91, 105, 0.438)
+            grid-row: 4
+            .info 
+                background-color: #888F8E
+            .continent 
+                background: #315558
         .europe
-            p 
-                background: rgba(15, 129, 129, 0.363)
+            grid-row: 5
+            .info 
+                background-color: #C2DCED
+            .continent 
+                background: #012827
         .north-america 
-            p 
-                background: rgba(143, 96, 27, 0.411)
+            grid-row: 6
+            .info 
+                background-color: #B0B2A7
+            .continent 
+                background: #34291D
         .south-america
-            p 
-                background: rgba(143, 97, 27, 0.329)
+            grid-row: 7
+            .info 
+                background-color: #7B6C5D
+            .continent 
+                background: #16180B
 
