@@ -1,0 +1,102 @@
+$grey : #615b5b
+$dark-grey : #2e2b2b
+$light : #b3acac
+$dark-light : #383737
+$black: #000000
+$main-font: 'Nunito', sans-serif
+$red: #ff0000
+$greed: #73ff66
+
+
+$body-color : $dark-grey
+$header-color : $grey
+    
+* 
+    padding: 0
+    margin: 0
+    text-decoration: none
+    color: $black
+
+body 
+    width: 100%
+    font-family: $main-font
+    
+
+header 
+    width: 100%
+    height: 50px
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    div
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+        p 
+            letter-spacing: 3px
+            display: inline-block
+            text-align: justify-all
+
+    
+    nav 
+        display: none
+
+main 
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 80vh repeat(7, 300px)
+    grid-gap: 0px
+
+    .hero 
+        img 
+            max-width: 100%
+            height: 80vh
+
+    .continents
+        
+        .card 
+            position: relative
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            img 
+                width: 100%
+                height: 300px
+            p 
+                display: inline-block
+                width: 160px
+                color: #fff
+                position: absolute
+                text-align: center
+                box-sizing: border-box
+                background: rgba(255, 0, 0, 0.5)
+                border: 1px solid #fff
+                padding: 10px
+                border-radius: 7px
+                text-transform: uppercase
+        .africa 
+            p 
+                background: rgba(79, 141, 20, 0.411)
+        .antartica 
+            p 
+                background: rgba(25, 141, 145, 0.397)
+        .asia 
+            p 
+                background: rgba(38, 105, 35, 0.438)
+        .australia 
+            p 
+                background: rgba(35, 91, 105, 0.438)
+        .europe
+            p 
+                background: rgba(15, 129, 129, 0.363)
+        .north-america 
+            p 
+                background: rgba(143, 96, 27, 0.411)
+        .south-america
+            p 
+                background: rgba(143, 97, 27, 0.329)
+
