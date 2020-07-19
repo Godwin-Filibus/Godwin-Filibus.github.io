@@ -46,15 +46,16 @@ table
 	border-spacing: 0
 
 .login
-    width: 90%
+    width: 85%
     height: 600px
+    box-sizing: border-box
     margin: 60px auto
     box-shadow: 0.1px 0.2px 1.2px #000
     border-bottom: 4px solid $hot-pink
     border-radius: 2px
 
     .wrapper 
-        width: 90%
+        width: 85%
         box-sizing: border-box
         margin: 0 auto
         padding: 70px 0
@@ -63,7 +64,6 @@ table
             font-family: $font-varela
             font-size: 1rem
             color: $grey
-            text-shadow: 1px 1px 6px 
             margin: 10px 0
 
         p:nth-of-type(1)
@@ -87,6 +87,7 @@ table
                 border: 1px solid $grey
                 border-radius: 5px
                 text-transform: uppercase
+                outline: none
 
             input::placeholder 
                 color: $placeholder
@@ -104,5 +105,8 @@ table
                 box-shadow: 0.1px 0.1px 20px $black-translucent
             
 
-.mobile 
+@media screen and ( max-width: 1024 )
+    body 
+        display: none
+    
 
